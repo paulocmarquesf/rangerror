@@ -1,0 +1,12 @@
+Package: rangerror
+Type: Package
+Title: Confidence intervals for the random forest generalization error
+Version: 0.1.0
+Author: Paulo C. Marques F.
+Maintainer: Paulo C. Marques F. <PauloCMF1@insper.edu.br>
+Description: Computes confidence intervals for the random forest
+    generalization error by bootstrapping the augmented training sample.
+License: BSD-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
