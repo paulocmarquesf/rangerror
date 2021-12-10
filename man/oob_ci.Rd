@@ -14,5 +14,5 @@ oob_ci(rf, conf_level = 0.95, M = 10^3)
 \item{M}{Number of bootstrap replications (defaults to 10^3)}
 }
 \description{
-Computes confidence interval for the random forest generalization error.
+Computes a confidence interval for the random forest generalization error.
 }
