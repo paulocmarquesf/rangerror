@@ -2,7 +2,7 @@
 % Please edit documentation in R/rangerror.R
 \name{oob_ci}
 \alias{oob_ci}
-\title{Out-of-bag confidence interval}
+\title{Out-of-bag confidence interval (see paper)}
 \usage{
 oob_ci(rf, conf_level = 0.95, M = 10^3)
 }

@@ -17,7 +17,7 @@ oob_ci <- function(rf, conf_level = 0.95, M = 10^3) {
 
    txt <- as.character(rf$call)[2]
    response <- unlist(regmatches(txt, gregexpr("^\\w+", txt)))
-   df <- get(rf$call$data)
+   df <- get(as.character(rf$call$data))
    n <- nrow(df)
    B <- rf$num.trees
 
