@@ -3,7 +3,7 @@ get_mode <- function(x) {
    u[which.max(tabulate(match(x, u)))]
 }
 
-#' Out-of-bag confidence interval
+#' Out-of-bag confidence interval (see paper)
 #'
 #' Computes a confidence interval for the random forest generalization error.
 #' @param rf A ranger object
