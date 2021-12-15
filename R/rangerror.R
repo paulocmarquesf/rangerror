@@ -4,8 +4,7 @@ get_mode <- function(x) {
 }
 
 #' Out-of-bag confidence interval (see paper)
-#'
-#' Computes a confidence interval for the random forest generalization error.
+#' @description Computes a confidence interval for the random forest generalization error.
 #' @param rf A ranger object
 #' @param conf_level Confidence level (defaults to 0.95)
 #' @param M Number of bootstrap replications (defaults to 10^3)
