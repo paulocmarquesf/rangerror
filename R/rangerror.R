@@ -5,6 +5,8 @@ get_mode <- function(x) {
 
 #' Out-of-bag confidence interval
 #' @description Computes a confidence interval for the random forest generalization error.
+#'
+#'     https://arxiv.org/abs/2112.06101
 #' @param rf A ranger object.
 #' @param conf_level Confidence level (defaults to 0.95).
 #' @param M Number of bootstrap replications (defaults to 10^3).
@@ -30,6 +32,6 @@ oob_ci <- function(rf, conf_level = 0.95, M = 10^3) {
         gamma_hat <- sapply(1:n, function(i) (df[[response]][i] - mean(y_hat[i, out[, i]]))^2)
         return(sqrt(quantile(rowMeans(matrix(sample(gamma_hat, size = M*n, replace = TRUE), nrow = M)), probs = c((1 - conf_level)/2, (1 + conf_level)/2))))
     } else {
-        stop("Should be a Classification or a Regression forest.")
+        stop("Must be a Classification or a Regression forest.")
     }
 }

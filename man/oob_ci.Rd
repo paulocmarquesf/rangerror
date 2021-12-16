@@ -2,17 +2,19 @@
 % Please edit documentation in R/rangerror.R
 \name{oob_ci}
 \alias{oob_ci}
-\title{Out-of-bag confidence interval (see paper)}
+\title{Out-of-bag confidence interval}
 \usage{
 oob_ci(rf, conf_level = 0.95, M = 10^3)
 }
 \arguments{
-\item{rf}{A ranger object}
+\item{rf}{A ranger object.}
 
-\item{conf_level}{Confidence level (defaults to 0.95)}
+\item{conf_level}{Confidence level (defaults to 0.95).}
 
-\item{M}{Number of bootstrap replications (defaults to 10^3)}
+\item{M}{Number of bootstrap replications (defaults to 10^3).}
 }
 \description{
 Computes a confidence interval for the random forest generalization error.
+
+    https://arxiv.org/abs/2112.06101
 }
