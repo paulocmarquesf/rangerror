@@ -13,7 +13,9 @@ library(MASS)
 rf <- ranger(medv ~ ., data = Boston, num.trees = 1000, keep.inbag = TRUE)
 
 rangerror::oob_ci(rf)
+```
 
+```
    2.5%    97.5% 
 2.724513 3.755303
 ```
