@@ -1,8 +1,6 @@
 # rangerror
 
-Confidence intervals for the random forest generalization error
-
-https://arxiv.org/abs/2112.06101
+Confidence intervals for the random forest generalization error as described in https://arxiv.org/abs/2112.06101
 
 ```r
 devtools::install_github("paulocmarquesf/rangerror")
