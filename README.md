@@ -1,6 +1,6 @@
 # rangerror
 
-Confidence intervals for the random forest generalization error as described in:
+Confidence intervals for the random forest generalization error.
 
   > https://arxiv.org/abs/2112.06101
 
