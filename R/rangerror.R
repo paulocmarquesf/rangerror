@@ -30,7 +30,7 @@ oob_ci <- function(rf, conf_level = 0.95, M = 10^3) {
         return(quantile(rowMeans(matrix(sample(gamma_hat, size = M*n, replace = TRUE), nrow = M)), probs = c((1 - conf_level)/2, (1 + conf_level)/2)))
     } else if (rf$treetype == "Regression") {
         gamma_hat <- sapply(1:n, function(i) (df[[response]][i] - mean(y_hat[i, out[, i]]))^2)
-        return(sqrt(quantile(rowMeans(matrix(sample(gamma_hat, size = M*n, replace = TRUE), nrow = M)), probs = c((1 - conf_level)/2, (1 + conf_level)/2))))
+        return(quantile(rowMeans(matrix(sample(gamma_hat, size = M*n, replace = TRUE), nrow = M)), probs = c((1 - conf_level)/2, (1 + conf_level)/2)))
     } else {
         stop("Must be a Classification or a Regression forest.")
     }

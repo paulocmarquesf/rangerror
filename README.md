@@ -10,9 +10,9 @@ devtools::install_github("paulocmarquesf/rangerror")
 library(ranger)
 library(MASS)
 
-rf <- ranger(medv ~ ., data = Boston, num.trees = 1000, keep.inbag = TRUE)
+rf <- ranger(medv ~ ., data = Boston, num.trees = 10^3, keep.inbag = TRUE)
 
-rangerror::oob_ci(rf)
+sqrt(rangerror::oob_ci(rf))
 ```
 
 ```
