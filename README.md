@@ -10,12 +10,14 @@ devtools::install_github("paulocmarquesf/rangerror")
 library(ranger)
 library(MASS)
 
+set.seed(42)
+
 rf <- ranger(medv ~ ., data = Boston, num.trees = 10^3, keep.inbag = TRUE)
 
 sqrt(rangerror::oob_ci(rf))
 ```
 
 ```
-   2.5%    97.5% 
-2.724513 3.755303
+    2.5%    97.5% 
+2.764147 3.663428 
 ```
