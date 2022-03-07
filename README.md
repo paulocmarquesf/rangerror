@@ -17,7 +17,7 @@ set.seed(42)
 
 ### Regression (Boston housing)
 
-```
+```r
 rf <- ranger(medv ~ ., data = Boston, num.trees = 10^3, keep.inbag = TRUE)
 
 sqrt(oob_ci(rf))
