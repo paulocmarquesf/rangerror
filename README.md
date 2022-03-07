@@ -33,7 +33,7 @@ sqrt(oob_ci(rf))
 ```r
 data(Glass)
 
-rf <- ranger(Type ~ ., data = Glass, num.trees = 1000, keep.inbag = TRUE)
+rf <- ranger(Type ~ ., data = Glass, num.trees = 10^3, keep.inbag = TRUE)
 
 oob_ci(rf)
 ```
