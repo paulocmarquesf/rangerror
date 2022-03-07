@@ -1,6 +1,6 @@
 # rangerror
 
-Confidence intervals for the random forest generalization error.
+Confidence intervals for the random forest generalization error
 
   > https://arxiv.org/abs/2112.06101
 
@@ -15,7 +15,7 @@ library(mlbench)
 set.seed(42)
 ```
 
-### Regression (Boston housing)
+#### Regression (Boston housing)
 
 ```r
 rf <- ranger(medv ~ ., data = Boston, num.trees = 10^3, keep.inbag = TRUE)
@@ -28,7 +28,7 @@ sqrt(oob_ci(rf))
 2.764147 3.663428
 ```
 
-### Classification (Forensic glass)
+#### Classification (Forensic glass)
 
 ```r
 data(Glass)
