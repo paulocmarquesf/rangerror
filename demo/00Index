@@ -1,1 +1,2 @@
-regression    Simple regression example using the Boston housing dataset.
+regression        Regression example using the Boston housing dataset.
+classification    Classification example using the Forensic Glass dataset.
