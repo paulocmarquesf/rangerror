@@ -2,7 +2,9 @@
 
 Confidence intervals for the random forest generalization error
 
-  > https://arxiv.org/abs/2112.06101
+Paulo C. Marques F.
+
+  > [Pattern Recognition Letters, Volume 158, June 2022, Pages 171-175][PRL]
 
 ```r
 devtools::install_github("paulocmarquesf/rangerror")
@@ -42,3 +44,5 @@ oob_ci(rf)
      2.5%     97.5%
 0.1401869 0.2523364
 ```
+
+[PRL]: https://bit.ly/3seNnFe
