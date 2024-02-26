@@ -45,4 +45,4 @@ oob_ci(rf)
 0.1401869 0.2523364
 ```
 
-[PRL]: https://bit.ly/3seNnFe
+[PRL]: https://doi.org/10.1016/j.patrec.2022.04.031
